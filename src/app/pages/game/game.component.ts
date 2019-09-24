@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Deck } from '../../models/deck.model';
 
 @Component({
   selector: 'app-game',
@@ -6,8 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./game.component.scss']
 })
 export class GameComponent implements OnInit {
+  deck = new Deck();
 
-  constructor() { }
+  constructor() {
+    this.deck.shuffle();
+  }
 
   ngOnInit() {
   }
