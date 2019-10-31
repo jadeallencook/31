@@ -1,0 +1,22 @@
+div.toolbar {
+    background-color: #000;
+    height: 75px;
+    display: grid;
+    grid-template-columns: 100px 1fr 100px;
+    align-items: center;
+    >div.points {
+        color: #FFF;
+        font-size: 2em;
+        text-align: center;
+        >span {
+            display: block;
+            font-size: 0.35em;
+        }
+    }
+    >div.options {
+        text-align: center;
+        >button {
+            color: #FFF;
+        }
+    }
+}

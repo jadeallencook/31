@@ -1,0 +1,21 @@
+div.card {
+    display: inline-block;
+    height: 75px;
+    width: 50px;
+    background-color: #FFF;
+    margin: 15px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding-top: 25px;
+    box-shadow: 2px 2px 4px #000000;
+}
+
+div.card.red {
+    color: red;
+}
+
+div.card.flipped {
+    background-color: #000;
+    background-image: url('../../../assets/hotel-wallpaper-black.png');
+    background-size: 5em;
+}

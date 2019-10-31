@@ -10,7 +10,7 @@ export class Card {
         this.face = face;
     }
 
-    value(): Number | false {
+    value(): number {
         const JQK: Array<Face> = ['J', 'Q', 'K'];
         if (JQK.indexOf(this.face) >= 0) {
             return 10;
@@ -19,7 +19,7 @@ export class Card {
         } else if (this.face >= 2 && this.face <= 10) {
             return Number(this.face);
         } else {
-            return false;
+            return 0;
         }
     }
 }

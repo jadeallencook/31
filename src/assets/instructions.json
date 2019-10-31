@@ -1,0 +1,18 @@
+{
+    "player": {
+        "init": "Pickup or draw a card.",
+        "pickup": "You picked up {{card}}, now dicard a card.",
+        "draw": "You drew a {{card}} from the deck, now dicard a card.",
+        "no-discard": "You need to discard a card.",
+        "discard": "You dicarded {{card}}, now it's player {{number}}'s turn.",
+        "win": "You win with {{points}} points!"
+    },
+    "opponent": {
+        "init": "It's player {{number}}'s turn.",
+        "draw": "Player {{number}} drew up a card from the deck.",
+        "pickup": "Player {{number}} picked up a card from the discard pile.",
+        "discard": "Player {{number}} dicarded a {{card}}.",
+        "knock": "Player {{number}} has knocked, everyone gets one last chance.",
+        "win": "Player {{number}} wins with {{points}} points."
+    }
+}

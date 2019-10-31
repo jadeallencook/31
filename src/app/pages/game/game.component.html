@@ -1,3 +1,18 @@
-<p>
-  game works!
-</p>
+<div class="game-component">
+  <div>
+    <app-navbar></app-navbar>
+  </div>
+  <div class="piles">
+    <app-draw-pile (click)="this.draw()"></app-draw-pile>
+    <app-discard-pile [cards]="this.discard" (click)="this.pickup()" *ngIf="this.discard.length"></app-discard-pile>
+  </div>
+  <div class="player-hand">
+    <app-player-hand [cards]="this.player.cards" [dispose]="this.dispose.bind(this)"></app-player-hand>
+  </div>
+  <div>
+    <app-instructions [instructions]="this.history"></app-instructions>
+  </div>
+  <div>
+    <app-toolbar [points]="this.player.points()" [draw]="this.draw" [knock]="this.knock"></app-toolbar>
+  </div>
+</div>

@@ -1,0 +1,15 @@
+div.game-component {
+    display: grid;
+    grid-template-rows: 30% 125px 125px 1fr 75px;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    >div.player-hand,
+    >div.piles {
+        text-align: center;
+    }
+    >div.piles * {
+        display: inline-block;
+        vertical-align: middle;
+    }
+}

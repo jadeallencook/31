@@ -1,0 +1,15 @@
+div.navbar {
+    background-color: #000;
+    height: 75px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100px 1fr 100px;
+    align-items: center;
+    text-align: center;
+    >div {
+        >a {
+            text-decoration: none;
+            color: #FFF;
+        }
+    }
+}

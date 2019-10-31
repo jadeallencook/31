@@ -1,5 +1,3 @@
-import { Suit } from '../types/suit.type';
-import { Face } from '../types/face.type';
 import { Card } from './card.model';
 import { faces } from '../data/faces.data';
 import { suits } from '../data/suits.data';
@@ -22,11 +20,7 @@ export class Deck {
         }
     }
 
-    draw() {
-
-    }
-
-    discard() {
-        
+    draw(): Card {
+        return this.cards.shift();
     }
 }
